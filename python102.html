@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Coding Summit Prework</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Coding Summit Prework</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="python101.html">Python 101</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="python102.html">Python 102</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="htmlcss.html">HTML/CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="additionalresources.html">Additional Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main -->
+    <main class="container p-3">
+        <div class="row">
+            <div class="col">
+            <h1>Python 102</h1><br>
+            <h2>Task 1 - Read E-book</h2>
+            <ol>
+                <li><a href="../static/PythonCrashCourse.pdf" target="_blank">Download</a></li>
+                <li>Chapter 5</li>
+                <li>Chapter 6</li>
+                <li>Chapter 7</li>
+                <li>Chapter 8</li>
+            </ol>
+            <br>
+
+            <h2>Task 2 - Follow these coding exercises</h2>
+            <p>Please try the following coding examples yourself.</p>
+            <h3>Python Control Flow</h3><br>
+            <h4>Indentation</h4>
+            Python Uses Indentation to do Control Flow.<br>
+            It is important to keep a good understanding of how indentation works in Python to maintain the structure and order of your code.<br><br>
+            <h4>The Three Ways</h4>
+            <p>In this universe, anything can be done by these three ways:</p>
+            <ol>
+                <li>Step by Step: line by line</li>
+                <li>Branch: if… elif… else..</li>
+                <li>Looping: for, while</li>
+            </ol>
+
+            <h4>Branch: if… elif… else..</h4>
+            The if Statement in Python allows us to tell the computer to perform alternative actions based on a certain set of results.<br><br>
+            Verbally, we can imagine we are telling the computer: "Hey if this case happens, perform some action"<br><br>
+            We can then expand the idea further with elif and else statements, which allow us to tell the computer:<br>
+            "Hey if this case happens, perform some action. Else if another case happens, perform some other action. Else-- none of the above cases happened, perform this action"<br><br>
+            Let's go ahead and look at the syntax format for if statements to get a better idea of this:<br>
+            <code><pre>    if case1:
+        perform action1
+    elif case2:
+        perform action2
+    else:
+        perform action 3
+                </pre></code>
+
+                <p>
+                Let's see a quick example of this:
+                </p>
+                <code><pre>    &gt;&gt;&gt; x = int(input("Please enter an integer: "))
+    Please enter an integer: 42
+    &gt;&gt;&gt; if x &lt; 0:
+    ...     x = 0
+    ...     print('Negative changed to zero')
+    ... elif x == 0:
+    ...     print('Zero')
+    ... elif x == 1:
+    ...     print('Single')
+    ... else:
+    ...     print('More')
+    ...
+    More
+                </pre></code>
+
+                <h4>Looping: for, while</h4>
+                <p>
+                The for statement in Python is used to do repeating. <br>
+                Python’s for statement iterates over the items of any sequence (a list or a string), in the order that they appear in the sequence.<br>
+                </p>
+                <code><pre>    &gt;&gt;&gt; # Measure some strings:
+    ... words = ['cat', 'window', 'defenestrate']
+    &gt;&gt;&gt; for w in words:
+    ...     print(w, len(w))
+    ...
+    cat 3
+    window 6
+    defenestrate 12
+                </pre></code>
+
+                <h3>Python Function</h3>
+
+                Functions will be one of our main building blocks when we construct larger and larger amounts of code to solve problems.<br><br>
+
+                <h4>What is a function?</h4>
+                Formally, a function is a useful device that groups together a set of statements so they can be run more than once.
+                They can also let us specify parameters that can serve as inputs to the functions.
+                On a more fundamental level, functions allow us to not have to repeatedly write the same code again and again. <br><br>
+
+                There are two kinds of functions: built-in functions, which are already created by python, and User defined functions (UDF)<br><br>
+
+                For example, the function len(), which is a built-in function, is used to get the length of a string or a list.
+                Since checking the length of a sequence is a common task you would want to write a function that can do this repeatedly at command.
+                Function is one of most basic levels of reusing code in Python.<br><br>
+
+                <h4>Function Syntax</h4>
+                <ol>
+                    <li>Indentation and the def Statement are used to build out a function in Python.</li>
+                    <li>A list of parameters in (x, y, z). It is possible for a function to not have any parameters just like (). Do not forget the ':', at the end of the first line of the function definition.</li>
+                    <li>Use a return statement, a function will return a result that can then be stored as a variable, or used in whatever manner a user wants.</li>
+                </ol>
+                <p>
+                    Here is a basic example
+                </p>
+                <code><pre>    &gt;&gt;&gt; def add_num(num1,num2):
+    ...     return num1+num2
+    &gt;&gt;&gt; add_num(4,5)
+    9
+                </pre></code>
+
+                <p>
+                    Here is a UDF function, it tests if a give number is prime:
+                </p>
+                <code><pre>    &gt;&gt;&gt; def is_prime(num):
+            '''
+            Naive method of checking for primes.
+            '''
+            for n in range(2,num):
+                if num % n == 0:
+                    print ('not prime')
+                    break
+            else: # If never mod zero, then prime
+                print ('prime')
+    &gt;&gt;&gt; is_prime(25)
+    not prime
+                </pre></code>
+
+                <h2>Task 3 - Coding Questions</h2><br>
+
+                <h3>Question 1 </h3>
+                <p>Write a function to print "hello_USERNAME!" USERNAME is the input of the function. The first line of the code has been defined as below.</p>
+                <code><pre>    def hello_name(user_name):
+        .....
+                </pre></code>
+
+                <h3>Question 2 </h3>
+                <p>Print first 100 odd numbers in Python.</p>
+
+                <h3>Question 3 </h3>
+                <p>Please write a Python function, max_num_in_list to return the max number of a given list. The first line of the code has been defined as below.</p>
+                <code><pre>    def max_num_in_list(a_list):
+        .....
+                </pre></code>
+
+                <h3>Question 4 </h3>
+                <p>Write a function to return if the given year is a leap year. A leap year is divisible by 4, but
+                        not divisible by 100, unless it is also divisible by 400. The return should be boolean Type (true/false).</p>
+                <code><pre>    def is_leap_year(a_year):
+        .....
+                </pre></code>
+
+                <h3>Question 5 </h3>
+                <p>Write a function to check to see if all numbers in list are consecutive numbers.
+                    For example,  [2,3,4,5,6,7] are consecutive numbers, but [1,2,4,5] are not consecutive numbers.
+                The return should be boolean Type.</p>
+                <code><pre>    def is_consecutive(a_list):
+        .....
+                </pre></code>
+
+                <a class="btn btn-primary btn-block" href="htmlcss.html">Continue to Html_CSS</a>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

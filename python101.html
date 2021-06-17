@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Coding Summit Prework</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Coding Summit Prework</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="python101.html">Python 101</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="python102.html">Python 102</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="htmlcss.html">HTML/CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="additionalresources.html">Additional Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main -->
+    <main class="container p-3">
+        <div class="row">
+            <div class="col">
+                <h1>Python 101</h1><br>
+                <h2>Task 1 - Setup your PC for software development and data analysis</h2>
+                <ol>
+                    <li>Follow this <a href="https://drive.google.com/drive/folders/1FoaJ2XQR3Z_UssPnJrFVrXB-iqvu6bEg" target="_blank">video tutorial</a> for setting up <a href="https://www.anaconda.com/">Anaconda</a> and <a href="https://www.python.org/">Python</a>.</li>
+                    <li>Install <a href="https://zoom.us/rec/play/vp0tcOmgq2k3H9TDtQSDAvIoW9XoffisgClNr6YPxUm8U3lXZwehZ7VGNLFwFcQcTeqowcUx3SspjFGJ" target="_blank">Git</a> for GitHub on Windows.</li>
+                </ol>
+                <br>
+                <!-- <ol>
+                    <li><a href="https://www.anaconda.com/download/">Installing Anaconda (which includes Jupyter)</a></li>
+                    <div>Please install the latest version of Anaconda using Python 3 (NOT python 2.7)</div>
+                    <div>Please check both of these options during Installations</div>
+                    <img src="./anacondainstall.png" alt="anacondainstall" style="width:500px;max-width:100%">
+                    <li>Open Jupyter Lab via the Terminal or Command Line</li>
+                    <img src="./lab.png" alt="lab1" style="width:500px;max-width:100%">
+                    <li>Create a notebook and type code as below to print "Hello Word!". <br>
+                        Click the play button (highlighted) to execute the python code.</li>
+                    <img src="./lab2.png" alt="lab2" style="width:500px;max-width:100%">
+                    <li><a target="_blank" href="https://docs.anaconda.com/anaconda/user-guide/getting-started">Learn More about Anaconda</a></li>
+                </ol> 
+                <br> -->
+
+                <h2>Task 2 - Read Textbook </h2>
+                <ol>
+                    <li><a href="../static/PythonCrashCourse.pdf" target="_blank">Download e-book</a></li>
+                    <li>Read chapter 2</li>
+                    <li>Read chapter 3</li>
+                    <li>Read chapter 4</li>
+                </ol>
+                <br>
+
+                <h2>Task 3 - Follow these coding exercises</h2>
+                <p>Please try the following code examples yourself by opening up the Command Prompt (if using Windows) or Terminal (if using Linux/Mac), type in "python" and press Enter. You should see "&gt;&gt;&gt;",
+                    if you don't then make sure you have Python installed.
+                </p>
+
+                <h3>Using Python as a Calculator</h3>
+                <p>
+                    The interpreter acts as a simple calculator: you can type an expression at it and it will write the value.
+                    Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping.
+                    For example:
+                </p>
+                <code><pre>    &gt;&gt;&gt; 2 + 2
+    4
+    &gt;&gt;&gt; 50 - 5*6
+    20
+    &gt;&gt;&gt; (50 - 5*6) / 4
+    5.0
+    &gt;&gt;&gt; 8 / 5  # division always returns a floating point number
+    1.6
+                </pre></code>
+
+                <p>
+                    The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have type float.
+                    Division (/) always returns a float.
+                    To do floor division and get an integer result (discarding any fractional result) you can use the // operator;
+                    to calculate the remainder you can use %:
+                </p>
+                <code><pre>    &gt;&gt;&gt; 17 / 3  # classic division returns a float
+    5.666666666666667
+    &gt;&gt;&gt;
+    &gt;&gt;&gt; 17 // 3  # floor division discards the fractional part
+    5
+    &gt;&gt;&gt; 17 % 3  # the % operator returns the remainder of the division
+    2
+    &gt;&gt;&gt; 5 * 3 + 2  # result * divisor + remainder
+    17
+
+    With Python, it is possible to use the ** operator to calculate powers
+    &gt;&gt;&gt;
+    &gt;&gt;&gt; 5 ** 2  # 5 squared
+    25
+    &gt;&gt;&gt; 2 ** 7  # 2 to the power of 7
+    128
+                </pre></code>
+
+                <p>
+                    The equal sign (=) is used to assign a value to a variable. Afterwards, no result is displayed before the next interactive prompt:
+                    There is full support for floating point; operators with mixed type operands convert the integer operand to floating point:
+                </p>
+                <code><pre>    &gt;&gt;&gt; width = 20
+    &gt;&gt;&gt; height = 5 * 9
+    &gt;&gt;&gt; width * height
+    900
+    &gt;&gt;&gt; 4 * 3.75 - 1
+    14.0
+                </pre></code>
+
+                <h3>Python String</h3>
+                <p>
+                    Besides numbers, Python can also manipulate strings, which can be expressed in several ways.
+                    They can be enclosed in single quotes ('...') or double quotes ("...") with the same result. \ can be used to escape quotes:
+                </p>
+                <code><pre>    &gt;&gt;&gt; 'spam eggs'  # single quotes
+    'spam eggs'
+    &gt;&gt;&gt; 'doesn\'t'  # use \' to escape the single quote...
+    "doesn't"
+    &gt;&gt;&gt; "doesn't"  # ...or use double quotes instead
+    "doesn't"
+    &gt;&gt;&gt; '"Yes," he said.'
+    '"Yes," he said.'
+    &gt;&gt;&gt; "\"Yes,\" he said."
+    '"Yes," he said.'
+    &gt;&gt;&gt; '"Isn\'t," she said.'
+    '"Isn\'t," she said.'
+                </pre></code>
+
+                <p>
+                    If you want to concatenate variables or a variable and a literal, use +:
+                </p>
+                <code><pre>    &gt;&gt;&gt; prefix = 'Py'
+    &gt;&gt;&gt; prefix + 'thon123'
+    'Python123'
+                </pre></code>
+
+                <p>
+                    Strings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a character is simply a string of size one:
+                </p>
+                <code><pre>    &gt;&gt;&gt; word = 'Python'
+    &gt;&gt;&gt; word[0]  # character in position 0
+    'P'
+    &gt;&gt;&gt; word[5]  # character in position 5
+    'n'
+                </pre></code>
+
+                <p>
+                    Indices may also be negative numbers, to start counting from the right:
+                </p>
+                <code><pre>    &gt;&gt;&gt; word[-1]  # last character
+    'n'
+    &gt;&gt;&gt; word[-2]  # second-last character
+    'o'
+    &gt;&gt;&gt; word[-6]
+    'P'
+                </pre></code>
+
+                <p>
+                    In addition to indexing, slicing is also supported. While indexing is used to obtain individual characters, slicing allows you to obtain substring:
+                </p>
+                <code><pre>    &gt;&gt;&gt; word[0:2]  # characters from position 0 (included) to 2 (excluded)
+    'Py'
+    &gt;&gt;&gt; word[2:5]  # characters from position 2 (included) to 5 (excluded)
+    'tho'
+                </pre></code>
+
+                <p>
+                Note how the start is always included, and the end always excluded. This makes sure that s[:i] + s[i:] is always equal to s:
+                </p>
+                <code><pre>    &gt;&gt;&gt; word[:2] + word[2:]
+    'Python'
+    &gt;&gt;&gt; word[:4] + word[4:]
+    'Python'
+                </pre></code>
+
+                <p>
+                Slice indices have useful defaults; an omitted first index defaults to zero, an omitted second index defaults to the size of the string being sliced.
+                </p>
+                <code><pre>    &gt;&gt;&gt; word[:2]   # character from the beginning to position 2 (excluded)
+    'Py'
+    &gt;&gt;&gt; word[4:]   # characters from position 4 (included) to the end
+    'on'
+    &gt;&gt;&gt; word[-2:]  # characters from the second-last (included) to the end
+    'on'
+                </pre></code>
+
+
+                <h3>Python List</h3>
+                <p>
+                Python knows a number of compound data types, used to group together other values.
+                The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets.
+                Lists might contain items of different types, but usually the items all have the same type.
+                </p>
+                <code><pre>    &gt;&gt;&gt; squares = [1, 4, 9, 16, 25]
+    &gt;&gt;&gt; squares
+    [1, 4, 9, 16, 25]
+                </pre></code>
+
+                <p>
+                Like strings (and all other built-in sequence type), lists can be indexed and sliced:
+                </p>
+                <code><pre>    &gt;&gt;&gt; squares[0]  # indexing returns the item
+    1
+    &gt;&gt;&gt; squares[-1]
+    25
+    &gt;&gt;&gt; squares[-3:]  # slicing returns a new list
+    [9, 16, 25]
+                </pre></code>
+
+                <p>
+                Lists also support operations like concatenation:
+                </p>
+                <code><pre>    &gt;&gt;&gt; squares + [36, 49, 64, 81, 100]
+    [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+                </pre></code>
+
+                <p>
+                Unlike strings, which are immutable, lists are a mutable type, i.e. it is possible to change their content:
+                </p>
+                <code><pre>    &gt;&gt;&gt; cubes = [1, 8, 27, 65, 125]  # something's wrong here
+    &gt;&gt;&gt; 4 ** 3  # the cube of 4 is 64, not 65!
+    64
+    &gt;&gt;&gt; cubes[3] = 64  # replace the wrong value
+    &gt;&gt;&gt; cubes
+    [1, 8, 27, 64, 125]
+                </pre></code>
+
+                <p>
+                You can also add new items at the end of the list, by using the append() method (we will see more about methods later):
+                </p>
+                <code><pre>    &gt;&gt;&gt; cubes.append(216)  # add the cube of 6
+    &gt;&gt;&gt; cubes.append(7 ** 3)  # and the cube of 7
+    &gt;&gt;&gt; cubes
+    [1, 8, 27, 64, 125, 216, 343]
+                </pre></code>
+
+                <p>
+                Assignment to slices is also possible, and this can even change the size of the list or clear it entirely:
+                </p>
+                <code><pre>    &gt;&gt;&gt; letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+    &gt;&gt;&gt; letters
+    ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+    &gt;&gt;&gt; # replace some values
+    &gt;&gt;&gt; letters[2:5] = ['C', 'D', 'E']
+    &gt;&gt;&gt; letters
+    ['a', 'b', 'C', 'D', 'E', 'f', 'g']
+    &gt;&gt;&gt; # now remove them
+    &gt;&gt;&gt; letters[2:5] = []
+    &gt;&gt;&gt; letters
+    ['a', 'b', 'f', 'g']
+    &gt;&gt;&gt; # clear the list by replacing all the elements with an empty list
+    &gt;&gt;&gt; letters[:] = []
+    &gt;&gt;&gt; letters
+    []
+                </pre></code>
+
+                <p>
+                The built-in function len() also applies to lists:
+                </p>
+
+                <code><pre>    &gt;&gt;&gt; letters = ['a', 'b', 'c', 'd']
+    &gt;&gt;&gt; len(letters)
+    4
+                </pre></code>
+
+                <a class="btn btn-primary btn-block" href="../week2/">Continue to Python 102</a>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
