@@ -8,13 +8,13 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="static/css/main.css">
     <title>Coding Summit Prework</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-u">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Coding Summit Prework</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -53,23 +53,9 @@
                     <li>Install <a href="https://zoom.us/rec/play/vp0tcOmgq2k3H9TDtQSDAvIoW9XoffisgClNr6YPxUm8U3lXZwehZ7VGNLFwFcQcTeqowcUx3SspjFGJ" target="_blank">Git</a> for GitHub on Windows.</li>
                 </ol>
                 <br>
-                <!-- <ol>
-                    <li><a href="https://www.anaconda.com/download/">Installing Anaconda (which includes Jupyter)</a></li>
-                    <div>Please install the latest version of Anaconda using Python 3 (NOT python 2.7)</div>
-                    <div>Please check both of these options during Installations</div>
-                    <img src="./anacondainstall.png" alt="anacondainstall" style="width:500px;max-width:100%">
-                    <li>Open Jupyter Lab via the Terminal or Command Line</li>
-                    <img src="./lab.png" alt="lab1" style="width:500px;max-width:100%">
-                    <li>Create a notebook and type code as below to print "Hello Word!". <br>
-                        Click the play button (highlighted) to execute the python code.</li>
-                    <img src="./lab2.png" alt="lab2" style="width:500px;max-width:100%">
-                    <li><a target="_blank" href="https://docs.anaconda.com/anaconda/user-guide/getting-started">Learn More about Anaconda</a></li>
-                </ol> 
-                <br> -->
-
                 <h2>Task 2 - Read Textbook </h2>
                 <ol>
-                    <li><a href="../static/PythonCrashCourse.pdf" target="_blank">Download e-book</a></li>
+                    <li><a href="/static/files/PythonCrashCourse.pdf" target="_blank">Download e-book</a></li>
                     <li>Read chapter 2</li>
                     <li>Read chapter 3</li>
                     <li>Read chapter 4</li>
@@ -87,50 +73,50 @@
                     Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping.
                     For example:
                 </p>
-                <code><pre>    &gt;&gt;&gt; 2 + 2
-    4
-    &gt;&gt;&gt; 50 - 5*6
-    20
-    &gt;&gt;&gt; (50 - 5*6) / 4
-    5.0
-    &gt;&gt;&gt; 8 / 5  # division always returns a floating point number
-    1.6
+                <code><pre>    &gt;&gt;&gt; 1 + 1
+    2
+    &gt;&gt;&gt; 100 - 5*10
+    50
+    &gt;&gt;&gt; (30 - 3*2) / 4
+    6.0
+    &gt;&gt;&gt; 12 / 5  # division always returns a floating point number
+    2.4
                 </pre></code>
 
                 <p>
-                    The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have type float.
+                    The integer numbers (e.g. 1, 4, 10) have type int, the ones with a fractional part (e.g. 1.0, 2.4) have type float.
                     Division (/) always returns a float.
                     To do floor division and get an integer result (discarding any fractional result) you can use the // operator;
                     to calculate the remainder you can use %:
                 </p>
-                <code><pre>    &gt;&gt;&gt; 17 / 3  # classic division returns a float
-    5.666666666666667
+                <code><pre>    &gt;&gt;&gt; 19 / 3  # classic division returns a float
+    6.333333333333333
     &gt;&gt;&gt;
-    &gt;&gt;&gt; 17 // 3  # floor division discards the fractional part
-    5
-    &gt;&gt;&gt; 17 % 3  # the % operator returns the remainder of the division
-    2
-    &gt;&gt;&gt; 5 * 3 + 2  # result * divisor + remainder
-    17
+    &gt;&gt;&gt; 19 // 3  # floor division discards the fractional part
+    6
+    &gt;&gt;&gt; 19 % 3  # the % operator returns the remainder of the division
+    1
+    &gt;&gt;&gt; 6 * 3 + 2  # result * divisor + remainder
+    20
 
     With Python, it is possible to use the ** operator to calculate powers
     &gt;&gt;&gt;
-    &gt;&gt;&gt; 5 ** 2  # 5 squared
-    25
-    &gt;&gt;&gt; 2 ** 7  # 2 to the power of 7
-    128
+    &gt;&gt;&gt; 7 ** 2  # 7 squared
+    49
+    &gt;&gt;&gt; 2 ** 6  # 2 to the power of 6
+    64
                 </pre></code>
 
                 <p>
                     The equal sign (=) is used to assign a value to a variable. Afterwards, no result is displayed before the next interactive prompt:
                     There is full support for floating point; operators with mixed type operands convert the integer operand to floating point:
                 </p>
-                <code><pre>    &gt;&gt;&gt; width = 20
-    &gt;&gt;&gt; height = 5 * 9
+                <code><pre>    &gt;&gt;&gt; width = 10
+    &gt;&gt;&gt; height = 5 * 6
     &gt;&gt;&gt; width * height
-    900
-    &gt;&gt;&gt; 4 * 3.75 - 1
-    14.0
+    300
+    &gt;&gt;&gt; 8 * 2.75 - 1
+    21.0
                 </pre></code>
 
                 <h3>Python String</h3>
@@ -138,18 +124,18 @@
                     Besides numbers, Python can also manipulate strings, which can be expressed in several ways.
                     They can be enclosed in single quotes ('...') or double quotes ("...") with the same result. \ can be used to escape quotes:
                 </p>
-                <code><pre>    &gt;&gt;&gt; 'spam eggs'  # single quotes
-    'spam eggs'
-    &gt;&gt;&gt; 'doesn\'t'  # use \' to escape the single quote...
-    "doesn't"
-    &gt;&gt;&gt; "doesn't"  # ...or use double quotes instead
-    "doesn't"
-    &gt;&gt;&gt; '"Yes," he said.'
-    '"Yes," he said.'
-    &gt;&gt;&gt; "\"Yes,\" he said."
-    '"Yes," he said.'
-    &gt;&gt;&gt; '"Isn\'t," she said.'
-    '"Isn\'t," she said.'
+                <code><pre>    &gt;&gt;&gt; 'pop music'  # single quotes
+    'pop music'
+    &gt;&gt;&gt; 'won\'t'  # use \' to escape the single quote...
+    "won't"
+    &gt;&gt;&gt; "won't"  # ...or use double quotes instead
+    "won't"
+    &gt;&gt;&gt; '"Okay," she said.'
+    '"Okay," she said.'
+    &gt;&gt;&gt; "\"Okay,\" she said."
+    '"Okay," she said.'
+    &gt;&gt;&gt; '"I can\'t," he said.'
+    '"I can\'t," he said.'
                 </pre></code>
 
                 <p>
@@ -289,7 +275,7 @@
     4
                 </pre></code>
 
-                <a class="btn btn-primary btn-block" href="../week2/">Continue to Python 102</a>
+                <a class="btn btn-primary btn-block" href="python102.html">Continue to Python 102</a>
             </div>
         </div>
     </main>
