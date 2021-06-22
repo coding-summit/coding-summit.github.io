@@ -1,5 +1,16 @@
-body {font-family: 'Rubik', sans-serif;}
-
+body {
+    font-family: 'Rubik', sans-serif;
+}
+.bg-overlay {
+    position: fixed;
+    height: 75vh;
+    width: 75vw;
+    background-image: url('/static/images/coding-summit-icon-fin.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: .05;
+}
 .navbar-u {
     padding: 10px 0 10px 0;
     /* position: fixed; */
@@ -55,7 +66,7 @@ li{font-size: large;}
 
 html.is-animating .transition-fade {
     opacity: 0;
-    transform: translateX(100vw);
+    /* transform: translateX(100vw); */
 }
 
 html.is-leaving .transition-fade {
