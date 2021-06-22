@@ -14,4 +14,12 @@ $(document).ready(function(){
         // removing smooth scroll on slide-up button click
         $('html').css("scrollBehavior", "auto");
     });
+    // bottom-button
+    $('.scroll-up-btn-bot').click(function(){
+        $('html').animate({scrollTop: 0});
+        // removing smooth scroll on slide-up button click
+        $('html').css("scrollBehavior", "auto");
+    });
 });
+
+const swup = new Swup();
