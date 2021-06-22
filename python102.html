@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="static/css/main.css">
+    <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
     <script src="https://kit.fontawesome.com/3d81577920.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="script.js" defer></script>
@@ -52,38 +59,43 @@
     <main class="container p-3">
         <div class="row">
             <div class="col">
-            <h1>Python 102</h1><br>
-            <h2>Task 1 - Read E-book</h2>
-            <ol>
-                <li><a href="/static/files/PythonCrashCourse.pdf" target="_blank">Download</a></li>
-                <li>Chapter 5</li>
-                <li>Chapter 6</li>
-                <li>Chapter 7</li>
-                <li>Chapter 8</li>
-            </ol>
-            <br>
+                <h1>Python 102</h1><br>
+                <h2>Task 1 - Read E-book</h2>
+                <ol>
+                    <li><a href="/static/files/PythonCrashCourse.pdf" target="_blank">Download</a></li>
+                    <li>Chapter 5</li>
+                    <li>Chapter 6</li>
+                    <li>Chapter 7</li>
+                    <li>Chapter 8</li>
+                </ol>
+                <br>
 
-            <h2>Task 2 - Follow these coding exercises</h2>
-            <p>Please try the following coding examples yourself.</p>
-            <h3>Python Control Flow</h3><br>
-            <h4>Indentation</h4>
-            Python Uses Indentation to do Control Flow.<br>
-            It is important to keep a good understanding of how indentation works in Python to maintain the structure and order of your code.<br><br>
-            <h4>The Three Ways</h4>
-            <p>In this universe, anything can be done by these three ways:</p>
-            <ol>
-                <li>Step by Step: line by line</li>
-                <li>Branch: if… elif… else..</li>
-                <li>Looping: for, while</li>
-            </ol>
+                <h2>Task 2 - Follow these coding exercises</h2>
+                <p>Please try the following coding examples yourself.</p>
+                <h3>Python Control Flow</h3><br>
+                <h4>Indentation</h4>
+                Python Uses Indentation to do Control Flow.<br>
+                It is important to keep a good understanding of how indentation works in Python to maintain the
+                structure and order of your code.<br><br>
+                <h4>The Three Ways</h4>
+                <p>In this universe, anything can be done by these three ways:</p>
+                <ol>
+                    <li>Step by Step: line by line</li>
+                    <li>Branch: if… elif… else..</li>
+                    <li>Looping: for, while</li>
+                </ol>
 
-            <h4>Branch: if… elif… else..</h4>
-            The if Statement in Python allows us to tell the computer to perform alternative actions based on a certain set of results.<br><br>
-            Verbally, we can imagine we are telling the computer: "Hey if this case happens, perform some action"<br><br>
-            We can then expand the idea further with elif and else statements, which allow us to tell the computer:<br>
-            "Hey if this case happens, perform some action. Else if another case happens, perform some other action. Else-- none of the above cases happened, perform this action"<br><br>
-            Let's go ahead and look at the syntax format for if statements to get a better idea of this:<br>
-            <code><pre>    if case1:
+                <h4>Branch: if… elif… else..</h4>
+                The if Statement in Python allows us to tell the computer to perform alternative actions based on a
+                certain set of results.<br><br>
+                Verbally, we can imagine we are telling the computer: "Hey if this case happens, perform some
+                action"<br><br>
+                We can then expand the idea further with elif and else statements, which allow us to tell the
+                computer:<br>
+                "Hey if this case happens, perform some action. Else if another case happens, perform some other action.
+                Else-- none of the above cases happened, perform this action"<br><br>
+                Let's go ahead and look at the syntax format for if statements to get a better idea of this:<br>
+                <code><pre>    if case1:
         perform action1
     elif case2:
         perform action2
@@ -92,7 +104,7 @@
                 </pre></code>
 
                 <p>
-                Let's see a quick example of this:
+                    Let's see a quick example of this:
                 </p>
                 <code><pre>    &gt;&gt;&gt; x = int(input("Please enter an integer: "))
     Please enter an integer: 42
@@ -111,8 +123,9 @@
 
                 <h4>Looping: for, while</h4>
                 <p>
-                The for statement in Python is used to do repeating. <br>
-                Python’s for statement iterates over the items of any sequence (a list or a string), in the order that they appear in the sequence.<br>
+                    The for statement in Python is used to do repeating. <br>
+                    Python’s for statement iterates over the items of any sequence (a list or a string), in the order
+                    that they appear in the sequence.<br>
                 </p>
                 <code><pre>    &gt;&gt;&gt; # Measure some strings:
     ... words = ['dog', 'pillow', 'communicate']
@@ -126,24 +139,32 @@
 
                 <h3>Python Function</h3>
 
-                Functions will be one of our main building blocks when we construct larger and larger amounts of code to solve problems.<br><br>
+                Functions will be one of our main building blocks when we construct larger and larger amounts of code to
+                solve problems.<br><br>
 
                 <h4>What is a function?</h4>
-                Formally, a function is a useful device that groups together a set of statements so they can be run more than once.
+                Formally, a function is a useful device that groups together a set of statements so they can be run more
+                than once.
                 They can also let us specify parameters that can serve as inputs to the functions.
-                On a more fundamental level, functions allow us to not have to repeatedly write the same code again and again. <br><br>
+                On a more fundamental level, functions allow us to not have to repeatedly write the same code again and
+                again. <br><br>
 
-                There are two kinds of functions: built-in functions, which are already created by python, and User defined functions (UDF)<br><br>
+                There are two kinds of functions: built-in functions, which are already created by python, and User
+                defined functions (UDF)<br><br>
 
-                For example, the function len(), which is a built-in function, is used to get the length of a string or a list.
-                Since checking the length of a sequence is a common task you would want to write a function that can do this repeatedly at command.
+                For example, the function len(), which is a built-in function, is used to get the length of a string or
+                a list.
+                Since checking the length of a sequence is a common task you would want to write a function that can do
+                this repeatedly at command.
                 Function is one of most basic levels of reusing code in Python.<br><br>
 
                 <h4>Function Syntax</h4>
                 <ol>
                     <li>Indentation and the def Statement are used to build out a function in Python.</li>
-                    <li>A list of parameters in (x, y, z). It is possible for a function to not have any parameters just like (). Do not forget the ':', at the end of the first line of the function definition.</li>
-                    <li>Use a return statement, a function will return a result that can then be stored as a variable, or used in whatever manner a user wants.</li>
+                    <li>A list of parameters in (x, y, z). It is possible for a function to not have any parameters just
+                        like (). Do not forget the ':', at the end of the first line of the function definition.</li>
+                    <li>Use a return statement, a function will return a result that can then be stored as a variable,
+                        or used in whatever manner a user wants.</li>
                 </ol>
                 <p>
                     Here is a basic example
@@ -174,7 +195,8 @@
                 <h2>Task 3 - Coding Questions</h2><br>
 
                 <h3>Question 1 </h3>
-                <p>Write a function to print "hello_USERNAME!" USERNAME is the input of the function. The first line of the code has been defined as below.</p>
+                <p>Write a function to print "hello_USERNAME!" USERNAME is the input of the function. The first line of
+                    the code has been defined as below.</p>
                 <code><pre>    def hello_name(user_name):
         .....
                 </pre></code>
@@ -183,22 +205,24 @@
                 <p>Print the first 100 odd numbers in Python.</p>
 
                 <h3>Question 3 </h3>
-                <p>Please write a Python function, max_num_in_list to return the max number of a given list. The first line of the code has been defined as below.</p>
+                <p>Please write a Python function, max_num_in_list to return the max number of a given list. The first
+                    line of the code has been defined as below.</p>
                 <code><pre>    def max_num_in_list(input_list):
         .....
                 </pre></code>
 
                 <h3>Question 4 </h3>
                 <p>Write a function to return if the given year is a leap year. A leap year is divisible by 4, but
-                        not divisible by 100, unless it is also divisible by 400. The return should be boolean Type (true/false).</p>
+                    not divisible by 100, unless it is also divisible by 400. The return should be boolean Type
+                    (true/false).</p>
                 <code><pre>    def is_leap_year(input_year):
         .....
                 </pre></code>
 
                 <h3>Question 5 </h3>
                 <p>Write a function to check to see if all numbers in list are consecutive numbers.
-                    For example,  [2,3,4,5,6,7] are consecutive numbers, but [1,2,4,5] are not consecutive numbers.
-                The return should be boolean Type.</p>
+                    For example, [2,3,4,5,6,7] are consecutive numbers, but [1,2,4,5] are not consecutive numbers.
+                    The return should be boolean Type.</p>
                 <code><pre>    def is_consecutive(input_list):
         .....
                 </pre></code>

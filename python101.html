@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="static/css/main.css">
@@ -54,8 +61,11 @@
                 <h1>Python 101</h1><br>
                 <h2>Task 1 - Setup your PC for software development and data analysis</h2>
                 <ol>
-                    <li>Follow this <a href="https://youtu.be/ThVFFKfh6fg" target="_blank">video tutorial</a> for setting up <a href="https://www.anaconda.com/">Anaconda</a> and <a href="https://www.python.org/">Python</a>.</li>
-                    <li>Install <a href="https://youtu.be/UUrdS4fGkJ4" target="_blank">Git</a> for GitHub on Windows.</li>
+                    <li>Follow this <a href="https://youtu.be/ThVFFKfh6fg" target="_blank">video tutorial</a> for
+                        setting up <a href="https://www.anaconda.com/">Anaconda</a> and <a
+                            href="https://www.python.org/">Python</a>.</li>
+                    <li>Install <a href="https://youtu.be/UUrdS4fGkJ4" target="_blank">Git</a> for GitHub on Windows.
+                    </li>
                 </ol>
                 <br>
                 <h2>Task 2 - Read Textbook </h2>
@@ -68,14 +78,17 @@
                 <br>
 
                 <h2>Task 3 - Follow these coding exercises</h2>
-                <p>Please try the following code examples yourself by opening up the Command Prompt (if using Windows) or Terminal (if using Linux/Mac), type in "python" and press Enter. You should see "&gt;&gt;&gt;",
+                <p>Please try the following code examples yourself by opening up the Command Prompt (if using Windows)
+                    or Terminal (if using Linux/Mac), type in "python" and press Enter. You should see "&gt;&gt;&gt;",
                     if you don't then make sure you have Python installed.
                 </p>
 
                 <h3>Using Python as a Calculator</h3>
                 <p>
-                    The interpreter acts as a simple calculator: you can type an expression at it and it will write the value.
-                    Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping.
+                    The interpreter acts as a simple calculator: you can type an expression at it and it will write the
+                    value.
+                    Expression syntax is straightforward: the operators +, -, * and / work just like in most other
+                    languages (for example, Pascal or C); parentheses (()) can be used for grouping.
                     For example:
                 </p>
                 <code><pre>    &gt;&gt;&gt; 1 + 1
@@ -89,9 +102,11 @@
                 </pre></code>
 
                 <p>
-                    The integer numbers (e.g. 1, 4, 10) have type int, the ones with a fractional part (e.g. 1.0, 2.4) have type float.
+                    The integer numbers (e.g. 1, 4, 10) have type int, the ones with a fractional part (e.g. 1.0, 2.4)
+                    have type float.
                     Division (/) always returns a float.
-                    To do floor division and get an integer result (discarding any fractional result) you can use the // operator;
+                    To do floor division and get an integer result (discarding any fractional result) you can use the //
+                    operator;
                     to calculate the remainder you can use %:
                 </p>
                 <code><pre>    &gt;&gt;&gt; 19 / 3  # classic division returns a float
@@ -113,8 +128,10 @@
                 </pre></code>
 
                 <p>
-                    The equal sign (=) is used to assign a value to a variable. Afterwards, no result is displayed before the next interactive prompt:
-                    There is full support for floating point; operators with mixed type operands convert the integer operand to floating point:
+                    The equal sign (=) is used to assign a value to a variable. Afterwards, no result is displayed
+                    before the next interactive prompt:
+                    There is full support for floating point; operators with mixed type operands convert the integer
+                    operand to floating point:
                 </p>
                 <code><pre>    &gt;&gt;&gt; width = 10
     &gt;&gt;&gt; height = 5 * 6
@@ -127,7 +144,8 @@
                 <h3>Python String</h3>
                 <p>
                     Besides numbers, Python can also manipulate strings, which can be expressed in several ways.
-                    They can be enclosed in single quotes ('...') or double quotes ("...") with the same result. \ can be used to escape quotes:
+                    They can be enclosed in single quotes ('...') or double quotes ("...") with the same result. \ can
+                    be used to escape quotes:
                 </p>
                 <code><pre>    &gt;&gt;&gt; 'pop music'  # single quotes
     'pop music'
@@ -152,7 +170,8 @@
                 </pre></code>
 
                 <p>
-                    Strings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a character is simply a string of size one:
+                    Strings can be indexed (subscripted), with the first character having index 0. There is no separate
+                    character type; a character is simply a string of size one:
                 </p>
                 <code><pre>    &gt;&gt;&gt; word = 'Python'
     &gt;&gt;&gt; word[0]  # character in position 0
@@ -173,7 +192,8 @@
                 </pre></code>
 
                 <p>
-                    In addition to indexing, slicing is also supported. While indexing is used to obtain individual characters, slicing allows you to obtain substring:
+                    In addition to indexing, slicing is also supported. While indexing is used to obtain individual
+                    characters, slicing allows you to obtain substring:
                 </p>
                 <code><pre>    &gt;&gt;&gt; word[0:2]  # characters from position 0 (included) to 2 (excluded)
     'Py'
@@ -182,7 +202,8 @@
                 </pre></code>
 
                 <p>
-                Note how the start is always included, and the end always excluded. This makes sure that s[:i] + s[i:] is always equal to s:
+                    Note how the start is always included, and the end always excluded. This makes sure that s[:i] +
+                    s[i:] is always equal to s:
                 </p>
                 <code><pre>    &gt;&gt;&gt; word[:2] + word[2:]
     'Python'
@@ -191,7 +212,8 @@
                 </pre></code>
 
                 <p>
-                Slice indices have useful defaults; an omitted first index defaults to zero, an omitted second index defaults to the size of the string being sliced.
+                    Slice indices have useful defaults; an omitted first index defaults to zero, an omitted second index
+                    defaults to the size of the string being sliced.
                 </p>
                 <code><pre>    &gt;&gt;&gt; word[:2]   # character from the beginning to position 2 (excluded)
     'Py'
@@ -204,9 +226,10 @@
 
                 <h3>Python List</h3>
                 <p>
-                Python knows a number of compound data types, used to group together other values.
-                The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets.
-                Lists might contain items of different types, but usually the items all have the same type.
+                    Python knows a number of compound data types, used to group together other values.
+                    The most versatile is the list, which can be written as a list of comma-separated values (items)
+                    between square brackets.
+                    Lists might contain items of different types, but usually the items all have the same type.
                 </p>
                 <code><pre>    &gt;&gt;&gt; squares = [1, 4, 9, 16, 25]
     &gt;&gt;&gt; squares
@@ -214,7 +237,7 @@
                 </pre></code>
 
                 <p>
-                Like strings (and all other built-in sequence type), lists can be indexed and sliced:
+                    Like strings (and all other built-in sequence type), lists can be indexed and sliced:
                 </p>
                 <code><pre>    &gt;&gt;&gt; squares[0]  # indexing returns the item
     1
@@ -225,14 +248,15 @@
                 </pre></code>
 
                 <p>
-                Lists also support operations like concatenation:
+                    Lists also support operations like concatenation:
                 </p>
                 <code><pre>    &gt;&gt;&gt; squares + [36, 49, 64, 81, 100]
     [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
                 </pre></code>
 
                 <p>
-                Unlike strings, which are immutable, lists are a mutable type, i.e. it is possible to change their content:
+                    Unlike strings, which are immutable, lists are a mutable type, i.e. it is possible to change their
+                    content:
                 </p>
                 <code><pre>    &gt;&gt;&gt; cubes = [1, 8, 27, 65, 125]  # something's wrong here
     &gt;&gt;&gt; 4 ** 3  # the cube of 4 is 64, not 65!
@@ -243,7 +267,8 @@
                 </pre></code>
 
                 <p>
-                You can also add new items at the end of the list, by using the append() method (we will see more about methods later):
+                    You can also add new items at the end of the list, by using the append() method (we will see more
+                    about methods later):
                 </p>
                 <code><pre>    &gt;&gt;&gt; cubes.append(216)  # add the cube of 6
     &gt;&gt;&gt; cubes.append(7 ** 3)  # and the cube of 7
@@ -252,7 +277,8 @@
                 </pre></code>
 
                 <p>
-                Assignment to slices is also possible, and this can even change the size of the list or clear it entirely:
+                    Assignment to slices is also possible, and this can even change the size of the list or clear it
+                    entirely:
                 </p>
                 <code><pre>    &gt;&gt;&gt; letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
     &gt;&gt;&gt; letters
@@ -272,7 +298,7 @@
                 </pre></code>
 
                 <p>
-                The built-in function len() also applies to lists:
+                    The built-in function len() also applies to lists:
                 </p>
 
                 <code><pre>    &gt;&gt;&gt; letters = ['a', 'b', 'c', 'd']

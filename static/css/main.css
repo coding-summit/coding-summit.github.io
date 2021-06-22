@@ -1,3 +1,5 @@
+body {font-family: 'Rubik', sans-serif;}
+
 .navbar-u {
     padding: 10px 0 10px 0;
     /* position: fixed; */
@@ -37,4 +39,9 @@ li{font-size: large;}
 }
 .scroll-up-btn:hover{
     filter: brightness(90%);
+}
+
+.my-card:hover {
+    background-color: rgba(0, 0, 0, .05);
+    transform: scale(1.1);
 }
