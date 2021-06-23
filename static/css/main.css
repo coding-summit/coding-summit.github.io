@@ -1,6 +1,4 @@
-body {
-    font-family: 'Rubik', sans-serif;
-}
+body {font-family: 'Rubik', sans-serif;}
 .bg-overlay {
     position: fixed;
     height: 75vh;
@@ -14,7 +12,6 @@ body {
 }
 .navbar-u {
     padding: 10px 0 10px 0;
-    /* position: fixed; */
     width: 100%;
 }
 a {
@@ -24,7 +21,6 @@ a {
 p{font-size: large;}
 code{font-size: large;}
 li{font-size: large;}
-
 .scroll-up-btn{
     position: fixed;
     height: 45px;
@@ -52,12 +48,10 @@ li{font-size: large;}
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
-
 .my-card:hover {
     background-color: rgba(0, 0, 0, .05);
     transform: scale(1.1);
 }
-
 .reg-trans {
     transition: 500ms;
 }
@@ -67,12 +61,10 @@ li{font-size: large;}
     transform: translateX(0);
     transform-origin: left;
 }
-
 html.is-animating .transition-fade {
     opacity: 0;
     transform: translateX(100vw);
 }
-
 html.is-leaving .transition-fade {
     opacity: 0;
     transform: translateX(0);
