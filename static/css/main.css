@@ -20,6 +20,7 @@ a {
 }
 p{font-size: large;}
 code{font-size: large;}
+pre {background-color: rgba(240, 240, 240, .45); border-radius: 10px; padding-top: 20px;}
 li{font-size: large;}
 .scroll-up-btn{
     position: fixed;
