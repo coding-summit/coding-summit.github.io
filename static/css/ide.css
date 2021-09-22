@@ -24,7 +24,7 @@
 .output {
     padding: 4px;
     border: 2px solid gray;
-    min-height: 100px;
+    /* min-height: 100px; */
     height: 32%;
     width: 100%;
     resize: none;
@@ -57,16 +57,28 @@
 .block-btn {
     width: 100%;
 }
-@media only screen and (max-width: 600px) {
-    #my-btn {
-        padding: 0;
-    }
-}
-
 .resize-me {
     margin-right: 52%;
     transition: all 0.3s ease;
 }
 .scroll-up-btn.move-over {
     right: 51vw
+}
+@media only screen and (max-width: 600px) {
+    .button-container {
+        height: 15%;
+    }
+    #my-btn {
+        bottom: 20px;
+    }
+    .output {
+        height: 25%;
+    }
+    .resize-me {
+        margin-right: auto;
+    }
+    .scroll-up-btn.move-over {
+        right: 0;
+        bottom: 50;
+    }
 }
