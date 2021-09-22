@@ -49,7 +49,9 @@
     padding: 8px;
     border: 0;
 }
-
+#open-editor-btn {
+    margin-bottom: 5px;
+}
 
 
 .block-btn {
