@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/ide.css">
     <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="static/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
@@ -98,6 +99,37 @@
             </div>
         </div>
     </main>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Coding Summit IDE</h5>
+          <button type="button" id='close-editor' class="btn-close text-reset" onclick='downsizeMain()' data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            
+            <div class="control-panel"></div>
+            <div class="main">
+                <div class="editor" id="editor"></div>
+                <div class="output"></div>
+                <div class="button-container">
+                    <button class="btn btn-secondary block-btn" id="my-btn" onclick="executeCode()"> Run </button>
+                </div>
+            </div>
+            
+            <script>
+                const input = document.querySelector('#editor');
+                const button = document.querySelector('#my-btn');
+                input.onkeyup = (e) => {
+                    if ((event.keyCode == 10 || event.keyCode == 13) && event.ctrlKey) { // enter or return
+                            button.click()
+                        }
+                    };
+            </script>
+        </div>
+    </div>
+
+    <script src="/static/js/ide.js"></script>
+    <script src="/static/js/lib/ace.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
 </body>

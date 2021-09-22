@@ -63,7 +63,7 @@ const executeCode = () => {
     setRequestHeader();
 
     $.ajax({
-        url: "compile/",
+        url: "https://codingsummit.herokuapp.com/prework/ide/compile/",
         method: "POST",
         data: {
             language: "python",
@@ -79,7 +79,6 @@ const executeCode = () => {
                 output+=`<div>${line}</div>`
             }
             $(".output").append(output)
-            console.log(output)
         },
 
         error: () => {
