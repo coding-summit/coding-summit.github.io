@@ -1,0 +1,70 @@
+.header {
+    background: #2a5a81;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+.control-panel {
+    background: lightgray;
+    text-align: right;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+.languages {
+    background: white;
+    border: 1px solid gray;
+}
+.main {height:100%}
+#editor { height: 60%; width: 100%;}
+.output {
+    padding: 4px;
+    border: 2px solid gray;
+    min-height: 100px;
+    height: 32%;
+    width: 100%;
+    resize: none;
+
+}
+.button-container {
+    text-align: right;
+    padding: 4px;
+    height: 8%;
+    position: relative;
+}
+#my-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 80%;
+}
+
+.btn {
+    background: #2a5a81;
+    color: white;
+    padding: 8px;
+    border: 0;
+}
+
+
+
+.block-btn {
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    #my-btn {
+        padding: 0;
+    }
+}
+
+.resize-me {
+    margin-right: 52%;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.move-over {
+    right: 51vw
+}

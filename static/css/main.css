@@ -41,7 +41,7 @@ li{font-size: large;}
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scroll-up-btn.show{
+.scroll-up-btn.showit{
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;

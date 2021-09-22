@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
     <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/ide.css">
     <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="static/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
@@ -59,7 +61,7 @@
     </nav>
     <!-- Main -->
     <main id='swup' class="container p-3 transition-fade">
-        <div class="row">
+        <div class="row" id='resize-me'>
             <div class="col reg-trans">
                 <h1>Python 102</h1><br>
                 <h2>Task 1 - Read E-book</h2>
@@ -74,6 +76,7 @@
 
                 <h2>Task 2 - Follow these coding exercises</h2>
                 <p>Please try the following coding examples yourself.</p>
+                <button class="btn btn-secondary" type="button" onclick='upsizeMain()' data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Open Python Editor</button>
                 <h3>Python Control Flow</h3><br>
                 <h4>Indentation</h4>
                 Python Uses Indentation to do Control Flow.<br>
@@ -229,10 +232,40 @@
         .....
                 </pre></code>
 
-                <a class="btn btn-secondary btn-block scroll-up-btn-bot" href="/htmlcss.html">Continue to Html_CSS</a>
+                <a class="btn btn-secondary btn-block scroll-up-btn-bot" onclick='nextPage()' href="/htmlcss.html">Continue to Html_CSS</a>
             </div>
         </div>
     </main>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Coding Summit IDE</h5>
+          <button type="button" id='close-editor'  class="btn-close text-reset" onclick='downsizeMain()' data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            
+            <div class="control-panel"></div>
+            <div class="main">
+                <div class="editor" id="editor"></div>
+                <div class="output"></div>
+                <div class="button-container">
+                    <button class="btn btn-secondary block-btn" id="my-btn" onclick="executeCode()"> Run </button>
+                </div>
+            </div>
+            
+            <script>
+                const input = document.querySelector('#editor');
+                const button = document.querySelector('#my-btn');
+                input.onkeyup = (e) => {
+                    if ((event.keyCode == 10 || event.keyCode == 13) && event.ctrlKey) { // enter or return
+                            button.click()
+                        }
+                    };
+            </script>
+        </div>
+    </div>
+    <script src="/static/js/ide.js"></script>
+    <script src="/static/js/lib/ace.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
 </body>
