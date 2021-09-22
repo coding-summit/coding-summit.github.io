@@ -28,7 +28,7 @@
     height: 32%;
     width: 100%;
     resize: none;
-
+    overflow: auto;
 }
 .button-container {
     text-align: right;
