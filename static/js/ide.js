@@ -63,21 +63,25 @@ const executeCode = () => {
     setRequestHeader();
 
     $.ajax({
-        url: "https://codingsummit.herokuapp.com/prework/ide/compile/",
+        url: "https://www.codingsummit.org/prework/ide/compile/",
         method: "POST",
         data: {
             language: "python",
-            code: editor.getSession().getValue()
+            code: editor.getSession().getValue(),
+            assertions: JSON.stringify([])
         },
 
         success: (res) => {
             $(".output").empty()
-            let eachLine = res.split('\n');
+            let logs = res.logs;
+            let result = res.result;
             let output = ''
-            for (let line of eachLine){
+            for (let line of logs){
                 line = line.replace(/</,'&lt;');
                 output+=`<div>${line}</div>`
             }
+            console.log(result)
+            output+=result === '>> '?'':`<div>${result.replace(/</,'&lt;')}</div>`;
             $(".output").append(output)
         },
 
